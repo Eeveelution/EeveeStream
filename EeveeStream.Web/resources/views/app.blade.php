@@ -30,10 +30,11 @@
     <div class="navbar">
       <style scoped>
         ul {
+          display: inline-block;
           list-style-type: none;
           margin: 0;
           padding: 0;
-          width: 98%;
+          width: 100%;
           background-color: #f1f1f1;
           background-clip: content-box;
         }
@@ -42,10 +43,10 @@
           display: block;
           color: white;
 
-          padding-top: 8px;
+          padding-top: 1vmin;
 
 
-          padding-bottom: 8px;
+          padding-bottom: 1vmin;
 
           text-decoration: none;
           background-color: #404040;
@@ -59,20 +60,27 @@
         }
 
         .navbar #space {
-          padding-top: 2vmin;
+          padding-top: 40vmin;
         }
+
+        .navbar #bottom {
+          vertical-align: bottom;
+        }
+
+
+
+
       </style>
 
       <ul class="navbar">
-        <li class="navbar"><a href="leaderboards">Leaderboards</a></li>
-        <li class="navbar"><a href="beatmaps">Beatmaps</a></li>
-        <li class="navbar"><a href="download">Download</a></li>
-        <li class="navbar"><a href="mapsubmit">Map Submissions</a></li>
-        <li class="navbar"><a href="info">Information</a></li>
-        <li class="navbar" id="space"></li>
+        <li ><a href="leaderboards">Leaderboards</a></li>
+        <li ><a href="beatmaps">Beatmaps</a></li>
+        <li ><a href="download">Download</a></li>
+        <li ><a href="mapsubmit">Map Submissions</a></li>
+        <li ><a href="info">Information</a></li>
 
-        <li class="navbar"><a href="login">Log In</a></li>
-        <li class="navbar"><a href="register">Register</a></li>
+        <li id="bottom"><a href="login">Log In</a></li>
+        <li id="bottom"><a href="register">Register</a></li>
       </ul>
     </div>
 
