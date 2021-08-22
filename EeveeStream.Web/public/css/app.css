@@ -3,6 +3,7 @@ body {
 }
 
 .container {
+    color: white;
     position: absolute;
     transform: translateX(-50%) scale(0.85, 0.85);
     left: 50%;
@@ -23,6 +24,7 @@ body {
 }
 
 .top-bar {
+    float:left;
     background-clip: content-box;
     background-color: #303030;
     display: grid;
@@ -36,6 +38,15 @@ body {
     padding-bottom: 25px;
 }
 
+.top-bar #title {
+    font-size: 5vmin;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 7.5vh;
+    max-height: 0.4fr;
+    background-clip: content-box;
+}
+
 .navbar {
     padding-right: 25px;
     background-clip: content-box;
@@ -47,4 +58,11 @@ body {
     background-clip: content-box;
     background-color: #303030;
     grid-area: content;
+    background-clip: content-box;
+}
+
+.content p {
+    padding-left: 20px;
+    padding-top: 5px;
+    background-clip: content-box;
 }
