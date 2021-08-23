@@ -2,9 +2,10 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
-class Branches extends Migration
+class PopulateBranches extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +14,11 @@ class Branches extends Migration
      */
     public function up()
     {
-        Schema::create("branches", function (Blueprint $table) {
-        	$table->id();
-        	$table->string("name");
-        	$table->string("latest_version");
-        	$table->unsignedBigInteger("latest_build");
-        	$table->enum("type", ["web", "stream", "cho"]);
-		});
+		DB::statement("INSERT INTO `branches` (name, latest_version, latest_build, type) VALUES".
+							"('stable', '20210823.0', 0, 'stream'),".
+							"('stable', 'xxxxxxxx.0', 0, 'cho'),".
+							"('stable', 'xxxxxxxx.0', 0, 'web')"
+		);
     }
 
     /**
@@ -29,6 +28,6 @@ class Branches extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists("branches");
+        //
     }
 }
