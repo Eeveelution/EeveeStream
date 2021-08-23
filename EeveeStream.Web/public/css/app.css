@@ -1,6 +1,9 @@
 body {
     background-color: #202020;
+}
 
+.fixed_size_text {
+    overflow: scroll !important;
 }
 
 .container {
@@ -61,7 +64,7 @@ body {
     background-clip: content-box;
     background-color: #303030;
     grid-area: content;
-    background-clip: content-box;
+    overflow: auto;
 }
 
 .content p {
