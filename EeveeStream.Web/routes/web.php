@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\IndexController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::get('/', [IndexController::class, 'Show']);
+Route::get("/test_session", function (Request $request) {
+	$request->session()->put("user_session", "test");
+
+	return $request->session()->get("user_session");
 });

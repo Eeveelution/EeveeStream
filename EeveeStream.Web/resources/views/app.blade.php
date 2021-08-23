@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><!DOCTYPE html>
       <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
       <head>
       <meta charset="utf-8">
@@ -73,6 +72,8 @@
       </style>
 
       <ul class="navbar">
+        <li ><a href="">Home</a></li>
+        <li ><a href="changelog">Changelog</a></li>
         <li ><a href="leaderboards">Leaderboards</a></li>
         <li ><a href="beatmaps">Beatmaps</a></li>
         <li ><a href="download">Download</a></li>

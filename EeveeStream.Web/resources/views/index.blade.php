@@ -2,8 +2,6 @@
 
 @section("content")
     <span class="fixed_size_text">
-
-
             <p>Welcome to <span style="color: hotpink">eevee!stream!</span> <br><br>
 
                 <span style="color: hotpink">eevee!stream!</span> is an attempt to recreate the old <a href="https://osustream.com" style="color: pink">osu!stream</a> experience on mobile. <br>
